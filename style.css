@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: white;
+    height: 300px;
+    width: 730px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 8px 5px #ebeaee;
+}
+
+.name {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 14px;
+    color: rgb(78 77 93 / 69%);
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0px 60px 0px;
+}
+
+.flex label {
+    color: #000000bd;
+    font-family: "Headland One", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+}
+
+.flex input {
+    width: 450px;
+    font-family: "Headland One", serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: larger;
+    text-align: center;
+    border: 1px solid #c9c9c999;
+    border-radius: 5px;
+}
+
+.flex input:hover {
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px 1px #0000001f;
+}
+
+.submit input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 40px;
+    font-family: "Headland One", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 21px;
+    border-radius: 25px;
+    border: 1px solid #3b3b3b3d;
+    transition: background-color 300ms ease-out;
+}
+
+.submit input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.note>* {
+    max-width: 1315px;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    margin: 20px 55px;
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bullet {
+    font-size: 15px;
+    line-height: 2.2;
+}
+
+.task-text{
+    max-width: 1315px;
+    white-space: normal;
+    word-wrap: break-word;
+}
