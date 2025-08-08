@@ -81,6 +81,7 @@ body {
     margin-right: auto;
     width: 160px;
     height: 40px;
+    cursor: pointer;
     font-family: "Headland One", serif;
     font-weight: 100;
     font-style: normal;
