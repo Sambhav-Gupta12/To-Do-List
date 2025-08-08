@@ -182,6 +182,7 @@ body {
     padding: 5px;
     width: 100px;
     text-align: center;
+    cursor: pointer;
     font-family: "Headland One", serif;
     font-weight: 100;
     font-style: normal;
