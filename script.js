@@ -27,6 +27,13 @@ function createDelete(parentElement) {
 
     newDelete.classList.add("delete-btn");
     parentElement.appendChild(newDelete);
+
+    newDelete.addEventListener("click", () => {
+    const taskText = parentElement.querySelector(".task-text").textContent;
+    let notes = getNotes().filter(n => n !== taskText);
+    setNote(notes);
+    parentElement.remove();
+});
 }
 
 function loadNotes() {
@@ -44,7 +51,6 @@ document.querySelector(".submit").addEventListener("click", () => {
         notes.push(note);
         setNote(notes);
         createNote(note);
-
         noteInput.value = "";
     } else {
         alert("Please enter a task.");
@@ -67,5 +73,37 @@ document.querySelector(".note").addEventListener("mouseout", (e) => {
     if (listItem) {
         const deleteBtn = listItem.querySelector(".delete-btn");
         if (deleteBtn) deleteBtn.style.display = "none";
+    }
+});
+
+document.querySelector(".theme").addEventListener("mouseover", (e) => {
+    const themeHover =  document.querySelector(".theme");
+    themeHover.style.backgroundColor = "rgb(78, 75, 75)";
+    }
+);
+
+document.querySelector(".theme").addEventListener("mouseout", (e) => {
+    const themeHover =  document.querySelector(".theme");
+    if (document.body.classList.contains("dark-mode")) {
+        themeHover.style.backgroundColor = "white";
+        themeHover.style.color = "black";
+     }
+});
+
+const button = document.querySelector(".theme");
+
+button.innerHTML = `Dark`;
+
+button.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        button.innerHTML = "Light";
+        button.style.backgroundColor = "white";
+        button.style.color = "black";
+    } else {
+        button.innerHTML = "Dark";
+        button.style.backgroundColor = "black";
+        button.style.color = "white";
     }
 });

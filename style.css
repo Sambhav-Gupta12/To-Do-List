@@ -97,7 +97,7 @@ body {
 .list{
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     font-size: 40px;
     padding-top: 14px;
@@ -171,4 +171,66 @@ body {
 
 .delete-btn:hover{
     background-color: #fbd7d7;
+}
+
+.theme{
+    display: block;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    font-family: "Headland One", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    transition: background-color 300ms ease-out;
+}
+
+.theme:hover{
+    background-color: rgb(78, 75, 75);
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .name {
+    color: white;
+}
+
+.dark-mode input{
+    color: white;
+    background-color: #1a1a1a;
+    border-color: #444;
+}
+
+.dark-mode label {
+    color: white;
+}
+
+.dark-mode .submit input[type="submit"] {
+    background-color: #0056b3;
+}
+
+.dark-mode .submit input[type="submit"]:hover {
+    background-color: #007BFF;
+}
+
+.dark-mode .list {
+    color: white
+}
+
+.dark-mode .list span {
+    color: white
 }
